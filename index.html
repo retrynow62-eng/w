@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>심플 그림판</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toolbar">
+        <!-- 색상 선택 -->
+        <input type="color" id="colorPicker" value="#000000">
+        
+        <!-- 브러시 두께 -->
+        <input type="range" id="lineWidth" min="1" max="20" value="5">
+        <span id="sizeValue">5px</span>
+
+        <!-- 모두 지우기 버튼 -->
+        <button id="clearBtn">모두 지우기</button>
+    </div>
+
+    <!-- 그림 그릴 도화지 -->
+    <canvas id="paintCanvas" width="800" height="600"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
